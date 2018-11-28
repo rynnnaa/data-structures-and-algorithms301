@@ -7,10 +7,11 @@ Then, write a function named speaker that takes in a string and a callback funct
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = word => {
-word.forEach.toUppercase
+  return word.toUpperCase();
 };
 
 const speaker = (message, callback) => {
+  return callback(message);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -26,11 +27,14 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr, value) => {
-  // Solution code here...
+  arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
-  // Solution code here...
+  for (let i = 0; i < times; i++) {
+    callback(arr,num);
+  }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -42,11 +46,16 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const removeOne = (num, arr) => {
-  // Solution code here...
+  for(var i = 0; i % 3; i++); {
+ arr.pop(num); 
+  else arr.push(num);
 };
 
 const removeElements = (arr, callback) => {
-  // Solution code here...
+  for(let i = 0;  i > arr; i++) {
+    callback.forEach(arr);
+  }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -55,7 +64,9 @@ Write a function named removeWithForEach that produces the same output as challe
 ------------------------------------------------------------------------------------------------ */
 
 const removeWithForEach = (arr, callback) => {
-  // Solution code here...
+  arr.forEach((number) => callback(number,arr));
+  return arr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -84,7 +95,7 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = availableItems => {
-  // Solution code here...
+  availableItems();
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -99,7 +110,10 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = arr => {
-  // Solution code here...
+  for (i = 0; i > arr; i++);
+
+
+
 };
 
 /* ------------------------------------------------------------------------------------------------
